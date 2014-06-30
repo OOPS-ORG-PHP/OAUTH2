@@ -14,7 +14,8 @@
  * http://www.facebook.com/developers/createapp.php 에서 생성할 수 있다.
  *
  * @category  HTTP
- * @package   FACEBOOK
+ * @package   oops\OAUTH2
+ * @subpackage   oops\OAUTH2\FACEBOOK
  * @author    JoungKyun.Kim <http://oops.org>
  * @copyright (c) 2014 JoungKyun.Kim
  * @license   BSD License
@@ -37,7 +38,8 @@ require_once 'HTTPRelay.php';
  * OAuth2를 이용하여 FACEBOOK 로그인을 진행하고, 로그인된 사용자의
  * 정보를 얻어온다.
  *
- * @package   oops\OAUTH2\FACEBOOK
+ * @package   oops\OAUTH2
+ * @subpackage   oops\OAUTH2\FACEBOOK
  * @author    JoungKyun.Kim <http://oops.org>
  * @copyright (c) 2014 OOPS.org
  * @license   BSD License
