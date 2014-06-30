@@ -14,7 +14,8 @@
  * http://dna.daum.net/apis/oauth2 를 참고하라.
  *
  * @category  HTTP
- * @package   oops\OAUTH2\DAUM
+ * @package   oops\OAUTH2
+ * @subpackage oops\OAUTH2\DAUM
  * @author    JoungKyun.Kim <http://oops.org>
  * @copyright (c) 2014 JoungKyun.Kim
  * @license   BSD License
@@ -40,7 +41,8 @@ require_once 'HTTPRelay.php';
  * OAuth2를 이용하여 DAUM 로그인을 진행하고, 로그인된 사용자의
  * 정보를 얻어온다.
  *
- * @package DAUM
+ * @package oops\OAUTH2
+ * @subpackage oops\OAUTH2\DAUM
  * @author    JoungKyun.Kim <http://oops.org>
  * @copyright (c) 2014 JoungKyun.Kim
  * @license   BSD License
