@@ -14,7 +14,8 @@
  *
  *
  * @category  HTTP
- * @package   GOOGLE
+ * @package   oops\OAUTH2
+ * @subpackage   oops\OAUTH2\GOOGLE
  * @author    JoungKyun.Kim <http://oops.org>
  * @copyright (c) 2014 OOPS.org
  * @license   BSD License
@@ -37,7 +38,8 @@ require_once 'HTTPRelay.php';
  * OAuth2를 이용하여 GOOGLE 로그인을 진행하고, 로그인된 사용자의
  * 정보를 얻어온다.
  *
- * @package GOOGLE
+ * @package   oops\OAUTH2
+ * @subpackage   oops\OAUTH2\GOOGLE
  * @author    JoungKyun.Kim <http://oops.org>
  * @copyright (c) 2014 OOPS.org
  * @license   BSD License
