@@ -12,7 +12,7 @@
 		<active>yes</active>
 	</lead>
 	<date>2014-06-30</date>
-	<time>18:37:10</time>
+	<time>18:53:03</time>
 	<version>
 		<release>1.0.0</release>
 		<api>1.0.0</api>
@@ -31,7 +31,7 @@
 			<file role="php" md5sum="c418d33f62384b95c9aeeb42d5c5cfab" name="OAUTH2/FACEBOOK.php" />
 			<file role="php" md5sum="9ea8c9be58907beb5ac8376d807e9bf8" name="OAUTH2/GOOGLE.php" />
 			<file role="php" md5sum="1a4a6c893518f7b9637f36419f3522c0" name="OAUTH2/NAVER.php" />
-			<file role="data" md5sum="aa4342791c32f6de57e554272888db35" name="OAUTH2/logout.template" />
+			<file role="php" md5sum="aa4342791c32f6de57e554272888db35" name="OAUTH2/logout.template" />
 		</dir>
 	</contents>
 	<dependencies>
