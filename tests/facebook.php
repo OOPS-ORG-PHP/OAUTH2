@@ -50,7 +50,7 @@ try {
 
 	// logout 시에는 callback url에 logout parameter를 추가하고,
 	// logout 후에 redirect가 필요하면 redirect parameter까지 추가한다.
-	if ( $_GET['logout'] ) {
+	if ( isset ($_GET['logout']) ) {
 		unset ($_SESSION['oauth2']);
 
 		if ( $_GET['redirect'] )
