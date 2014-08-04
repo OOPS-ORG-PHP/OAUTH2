@@ -351,6 +351,10 @@ Class DAUM {
 		if ( ! isset ($sess->oauth) )
 			return;
 
+		/*
+		 * daum logout page에서 url argument를 더이상 get method
+		 * 로 허가하지 않는다!
+		 *
 		if ( ! isset ($_GET['after']) ) {
 			$url = sprintf (
 				'%s?url=%s',
@@ -358,6 +362,36 @@ Class DAUM {
 			);
 
 			Header ('Location: ' . $url);
+			exit;
+		}
+		 */
+
+		if ( ! isset ($_GET['after']) ) {
+			$post = array ('token' => $sess->oauth->access_token);
+
+			$http = new \HTTPRelay;
+			$buf = $http->fetch ($this->reqRevoke, 10, '', $post);
+
+			if ( trim ($_SERVER['QUERY_STRING']) )
+				$qs = sprintf ('?%s&after', $_SERVER['QUERY_STRING']);
+			else
+				$qs = '?after';
+
+			$redirect = $_SERVER['SCRIPT_URI'] . $qs;
+
+			$logoutDoc = file_get_contents ('OAUTH2/logout.template', true);
+			$src = array (
+				'/{%VENDOR%}/',
+				'/{%REDIRECT%}/',
+				'/{%LOGOUT-URL%}/',
+			);
+			$dst = array (
+				'DAUM',
+				$redirect,
+				$this->reqRevoke
+			);
+			$logoutDoc = preg_replace ($src, $dst, $logoutDoc);
+			echo $logoutDoc;
 			exit;
 		}
 
