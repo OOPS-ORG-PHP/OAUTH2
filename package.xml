@@ -12,7 +12,7 @@
 		<active>yes</active>
 	</lead>
 	<date>2014-08-05</date>
-	<time>01:45:28</time>
+	<time>01:47:28</time>
 	<version>
 		<release>1.0.1</release>
 		<api>1.0.0</api>
@@ -22,12 +22,12 @@
 		<api>stable</api>
 	</stability>
 	<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-	<notes>
+	<notes>* 다음 logout 방식 변경 사항 수정
 </notes>
 	<contents>
 		<dir name="/">
 			<file role="php" md5sum="edaa84f94b600a18d15a7d182d302fc4" name="OAUTH2.php" />
-			<file role="php" md5sum="3cb95a42a67d0a3a07c32ad02c5a60e3" name="OAUTH2/DAUM.php" />
+			<file role="php" md5sum="267237c4c512bcae14c4ce7dc98d2e49" name="OAUTH2/DAUM.php" />
 			<file role="php" md5sum="c418d33f62384b95c9aeeb42d5c5cfab" name="OAUTH2/FACEBOOK.php" />
 			<file role="php" md5sum="9ea8c9be58907beb5ac8376d807e9bf8" name="OAUTH2/GOOGLE.php" />
 			<file role="php" md5sum="1a4a6c893518f7b9637f36419f3522c0" name="OAUTH2/NAVER.php" />
@@ -67,7 +67,7 @@
 			</stability>
 			<date>2014-08-05</date>
 			<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-			<notes>
+			<notes>* 다음 logout 방식 변경 사항 수정
 </notes>
 		</release>
 		<release>
