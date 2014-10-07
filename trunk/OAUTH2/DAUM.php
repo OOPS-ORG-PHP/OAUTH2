@@ -322,7 +322,7 @@ Class DAUM {
 		$r = json_decode ($buf);
 
 		if ( $r->code != 200 )
-			throw new myException ($r->message);
+			throw new \myException ($r->message);
 
 		$re = array (
 			'id'    => $r->result->id,
