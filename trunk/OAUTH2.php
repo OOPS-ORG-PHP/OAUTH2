@@ -101,7 +101,7 @@ Class OAUth2 {
 	 * API
 	 *
 	 * @access public
-	 * return stdClass 사용자 Profile
+	 * @return stdClass 사용자 Profile
 	 *   - id    사용자 UID
 	 *   - name  사용자 Nickname
 	 *   - email 사용자 email (Provider에 따라 없을 수도 있다.)
