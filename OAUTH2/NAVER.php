@@ -88,7 +88,6 @@ Class NAVER {
 	private $consumer;
 	/**
 	 * SSL type
-	 * @access private
 	 * @var string
 	 */
 	private $proto = 'http';
