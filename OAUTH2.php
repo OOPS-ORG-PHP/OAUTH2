@@ -206,12 +206,12 @@ Class OAUth2 {
 	 *              없으면 false를 반환
 	 */
 	private function file_exists ($f) {
-		if ( file_exists ($f) )
+		if ( @file_exists ($f) )
 			return true;
 
 		$entry = preg_split ('/:/', $this->ini_get ('include_path'));
 		foreach ($entry as $base) {
-			if ( file_exists ($base . '/' . $f) )
+			if ( @file_exists ($base . '/' . $f) )
 				return true;
 		}
 
