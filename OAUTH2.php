@@ -83,7 +83,6 @@ Class OAUth2 {
 		$this->vendor = strtoupper ($app->vendor);
 
 		$resource = sprintf ('OAUTH2/%s.php', $this->vendor);
-		$entry = preg_split ('/:/', $this->ini_get ('include_path'));
 
 		if ( ! $this->file_exists ($resource) )
 			throw new \myException (sprintf ('Unsupport vendor "%s"', $app->vendor));
