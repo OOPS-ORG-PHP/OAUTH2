@@ -79,6 +79,11 @@ Class NAVER {
 	 */
 	private $reqUser  = 'https://apis.naver.com/nidlogin/nid/getUserProfile.xml';
 	/**
+	 * revoke url
+	 * @var string
+	 */
+	private $reqRevoke = 'https://nid.naver.com/nidlogin.logout';
+	/**
 	 * consumer information
 	 * @var stdClass memebr는 다음과 같음
 	 *   - id     : Naver login CliendID key
@@ -327,22 +332,44 @@ Class NAVER {
 		if ( ! isset ($sess->oauth) )
 			return;
 
-		// guide에는 refresh_token을 넣으라고 되어 있는데,
-		// 실제로는 access_token을 넣어야 한다.
-		$url = sprintf (
-			'%s?grant_type=delete&client_id=%s&client_secret=%s&' .
-			'access_token=%s&service_provider=NAVER',
-			$this->reqToken, $cons->id, $cons->secret, $sess->oauth->access_token
-		);
+		if ( ! isset ($_GET['after']) ) {
+			$url = sprintf (
+				'%s?grant_type=delete&client_id=%s&client_secret=%s&' .
+				'access_token=%s&service_provider=NAVER',
+				$this->reqToken, $cons->id, $cons->secret, $sess->oauth->access_token
+			);
 
-		$http = new \HTTPRelay;
-		$buf = $http->fetch ($url);
+			$http = new \HTTPRelay;
+			$buf = $http->fetch ($url);
 
-		$r = json_decode ($buf);
-		if ( $r->error )
-			$this->error ($r->error_description);
+			$r = json_decode ($buf);
+			if ( $r->error )
+				$this->error ($r->error_description);
 
-		unset ($_SESSION[$this->sessid]);
+			unset ($_SESSION[$this->sessid]);
+
+			if ( trim ($_SERVER['QUERY_STRING']) )
+				$qs = sprintf ('?%s&after', $_SERVER['QUERY_STRING']);
+			else
+				$qs = '?after';
+
+			$redirect = $_SERVER['SCRIPT_URI'] . $qs;
+
+			$logoutDoc = file_get_contents ('OAUTH2/logout.template', true);
+			$src = array (
+				'/{%VENDOR%}/',
+				'/{%REDIRECT%}/',
+				'/{%LOGOUT-URL%}/',
+			);
+			$dst = array (
+				'NAVER',
+				$redirect,
+				$this->reqRevoke
+			);
+			$logoutDoc = preg_replace ($src, $dst, $logoutDoc);
+			echo $logoutDoc;
+			exit;
+		}
 	}
 	// }}}
 }
