@@ -71,6 +71,9 @@ Class OAUth2 {
 	 * OAUTH2 로그인 인증 과정을 수행한다. 인증 과정 중에 에러가
 	 * 발생하면 myException으로 에러 메시지를 보낸다.
 	 *
+	 * logout 시에 globale 변수 $_OAUTH2_LOGOUT_TEMPALTE_ 로 사용자 logout template
+	 * 을 지정할 수 있다. template 파일은 pear/OAUTH2/login.template 를 참조하면 된다.
+	 *
 	 * @access public
 	 * @param stdClass $app  로그인 정보
 	 *   - vendor    OAUTH2 Service Provider (현재 google/facebook/daum/naver 지원)
