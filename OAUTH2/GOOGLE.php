@@ -105,6 +105,9 @@ Class GOOGLE {
 	 * 에러가 발생하면 myException 으로 에러 메시지를
 	 * 보낸다.
 	 *
+	 * logout 시에 globale 변수 $_OAUTH2_LOGOUT_TEMPALTE_ 로 사용자 logout template
+	 * 을 지정할 수 있다. template 파일은 pear/OAUTH2/login-agree.template 를 참조하면 된다.
+	 *
 	 * @access public
 	 * @param stdClass $v
 	 *   - id       발급받은 Google login Application ID
