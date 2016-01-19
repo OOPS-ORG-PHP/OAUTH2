@@ -337,16 +337,24 @@ Class GOOGLE {
 
 			$redirect = $_SERVER['SCRIPT_URI'] . $qs;
 
-			$logoutDoc = file_get_contents ('OAUTH2/logout.template', true);
+			$logoutDocPath = 'OAUTH2/logout-agree.template';
+			if ( $GLOBALS['_OAUTH2_LOGOUT_TEMPALTE_'] ) {
+				if ( file_exists ($GLOBALS['_OAUTH2_LOGOUT_TEMPALTE_']) )
+					$logoutDocPath = $GLOBALS['_OAUTH2_LOGOUT_TEMPALTE_'];
+			}
+			$logoutDoc = file_get_contents ($logoutDocPath, true);
 			$src = array (
 				'/{%VENDOR%}/',
 				'/{%REDIRECT%}/',
 				'/{%LOGOUT-URL%}/',
+				'/{%WIN-WIDTH%}/',
+				'/{%WIN-HEIGHT%}/',
 			);
 			$dst = array (
 				'Google',
 				$redirect,
-				'https://accounts.google.com/Logout?continue=https://google.com'
+				'https://accounts.google.com/Logout?continue=https://google.com',
+				600, 250
 			);
 			$logoutDoc = preg_replace ($src, $dst, $logoutDoc);
 			echo $logoutDoc;
