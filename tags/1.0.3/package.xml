@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.10.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>OAUTH2</name>
+ <channel>pear.oops.org</channel>
+ <summary>OAUTH2 authenticate library</summary>
+ <description>PEAR&apos;s oops\OAUTH2:: package for OAUTH2 authentication</description>
+ <lead>
+  <name>JoungKyun.Kim</name>
+  <user>joungkyun</user>
+  <email>joungkyun@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2016-01-20</date>
+ <time>04:11:25</time>
+ <version>
+  <release>1.0.3</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+ <notes>
+* 지원하지 않는 vendor 접근시에 exception 처리 안되는 문제 수정
+* NAVER logout 시에 네이버 사이트 로그아웃 되지 않는 문제 해결
+* logout page 디자인 변경 및 메시지 영문으로 변경
+* X-Frame-Options 문제로 gooogle logout 안되는 문제 해결
+* $_OAUTH2_LOGOUT_TEMPALTE_ global 변수로 사용자 logout template을 사용할 수 있도록 지원
+* GITHUB oauth2 지원
+ </notes>
+ <contents>
+  <dir name="/">
+   <file md5sum="04fdeed8899010c4db6aad407878e828" name="OAUTH2.php" role="php" />
+   <file md5sum="f2654a7bb33048c514a62c2693fbcce8" name="OAUTH2/DAUM.php" role="php" />
+   <file md5sum="a54ba9eb44b8c57fe336984236452b94" name="OAUTH2/FACEBOOK.php" role="php" />
+   <file md5sum="e528dd5cfe525b9560642e8c09e80b67" name="OAUTH2/GITHUB.php" role="php" />
+   <file md5sum="419272af8b40e5ade59fc67003ded10e" name="OAUTH2/GOOGLE.php" role="php" />
+   <file md5sum="99b35a5e0e200ce13895818f7c18e97b" name="OAUTH2/NAVER.php" role="php" />
+   <file md5sum="224ea170ad68506ba9f0805a49be2b0d" name="OAUTH2/logout-agree.template" role="php" />
+   <file md5sum="318f0bc144dd8ad28be690f6e9ff2af3" name="OAUTH2/logout-no-auto.template" role="php" />
+   <file md5sum="3f38dd2c30e3a33dca52a253908c96a6" name="OAUTH2/logout.template" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.3.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.3</min>
+   </pearinstaller>
+   <package>
+    <name>myException</name>
+    <channel>pear.oops.org</channel>
+    <min>1.0.1</min>
+   </package>
+   <package>
+    <name>HTTPRelay</name>
+    <channel>pear.oops.org</channel>
+    <min>1.0.5</min>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.3</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2016-01-20</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+   <notes>
+* 지원하지 않는 vendor 접근시에 exception 처리 안되는 문제 수정
+* NAVER logout 시에 네이버 사이트 로그아웃 되지 않는 문제 해결
+* logout page 디자인 변경 및 메시지 영문으로 변경
+* X-Frame-Options 문제로 gooogle logout 안되는 문제 해결
+* $_OAUTH2_LOGOUT_TEMPALTE_ global 변수로 사용자 logout template을 사용할 수 있도록 지원
+* GITHUB oauth2 지원
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.2</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2015-06-09</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+   <notes>
+* fixed unknown class oops\OAUTH2\myException on DAUM api
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.1</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2014-08-05</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+   <notes>
+* 다음 logout 방식 변경 사항 수정
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2014-06-30</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+   <notes>
+* 1.0.0 release
+   </notes>
+  </release>
+ </changelog>
+</package>
