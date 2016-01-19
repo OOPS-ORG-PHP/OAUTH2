@@ -86,6 +86,7 @@ Class GOOGLE {
 	private $apps;
 	/**
 	 * SSL type
+	 * @access private
 	 * @var string
 	 */
 	private $proto = 'http';
