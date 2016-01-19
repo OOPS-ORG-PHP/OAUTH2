@@ -12,7 +12,7 @@
 		<active>yes</active>
 	</lead>
 	<date>2016-01-20</date>
-	<time>04:02:20</time>
+	<time>04:04:22</time>
 	<version>
 		<release>1.0.3</release>
 		<api>1.0.0</api>
@@ -26,13 +26,14 @@
 * NAVER logout 시에 네이버 사이트 로그아웃 되지 않는 문제 해결
 * logout page 디자인 변경 및 메시지 영문으로 변경
 * X-Frame-Options 문제로 gooogle logout 안되는 문제 해결
+* $_OAUTH2_LOGOUT_TEMPALTE_ global 변수로 사용자 logout template을 사용할 수 있도록 지원
 </notes>
 	<contents>
 		<dir name="/">
 			<file role="php" md5sum="04fdeed8899010c4db6aad407878e828" name="OAUTH2.php" />
 			<file role="php" md5sum="0bcd6c104cbce91d5df33ea45d9042eb" name="OAUTH2/DAUM.php" />
 			<file role="php" md5sum="b1c8df184d1339ac6f4e598bcc289dc7" name="OAUTH2/FACEBOOK.php" />
-			<file role="php" md5sum="07ecce0efbe3d33a563739c08ba1b187" name="OAUTH2/GOOGLE.php" />
+			<file role="php" md5sum="419272af8b40e5ade59fc67003ded10e" name="OAUTH2/GOOGLE.php" />
 			<file role="php" md5sum="b6af1dfa053888c6cd5d1e30c8e0b7b7" name="OAUTH2/NAVER.php" />
 			<file role="php" md5sum="3f38dd2c30e3a33dca52a253908c96a6" name="OAUTH2/logout.template" />
 		</dir>
@@ -74,6 +75,7 @@
 * NAVER logout 시에 네이버 사이트 로그아웃 되지 않는 문제 해결
 * logout page 디자인 변경 및 메시지 영문으로 변경
 * X-Frame-Options 문제로 gooogle logout 안되는 문제 해결
+* $_OAUTH2_LOGOUT_TEMPALTE_ global 변수로 사용자 logout template을 사용할 수 있도록 지원
 </notes>
 		</release>
 		<release>
