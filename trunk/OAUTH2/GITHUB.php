@@ -41,7 +41,7 @@ require_once 'HTTPRelay.php';
  * @package   oops\OAUTH2
  * @subpackage   oops\OAUTH2\GITHUB
  * @author    JoungKyun.Kim <http://oops.org>
- * @copyright (c) 2015 OOPS.org
+ * @copyright (c) 2016 OOPS.org
  * @license   BSD License
  * @version   SVN: $Id$
  * @example   pear_OAUTH2/tests/github.php GITHUB pear 예제 코드
