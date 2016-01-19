@@ -12,9 +12,9 @@
 		<active>yes</active>
 	</lead>
 	<date>2016-01-20</date>
-	<time>04:11:25</time>
+	<time>04:13:43</time>
 	<version>
-		<release>1.0.3</release>
+		<release>1.0.4</release>
 		<api>1.0.0</api>
 	</version>
 	<stability>
@@ -22,12 +22,7 @@
 		<api>stable</api>
 	</stability>
 	<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-	<notes>* 지원하지 않는 vendor 접근시에 exception 처리 안되는 문제 수정
-* NAVER logout 시에 네이버 사이트 로그아웃 되지 않는 문제 해결
-* logout page 디자인 변경 및 메시지 영문으로 변경
-* X-Frame-Options 문제로 gooogle logout 안되는 문제 해결
-* $_OAUTH2_LOGOUT_TEMPALTE_ global 변수로 사용자 logout template을 사용할 수 있도록 지원
-* GITHUB oauth2 지원
+	<notes>
 </notes>
 	<contents>
 		<dir name="/">
@@ -64,6 +59,20 @@
 	</dependencies>
 	<phprelease />
 	<changelog>
+		<release>
+			<version>
+				<release>1.0.4</release>
+				<api>1.0.0</api>
+			</version>
+			<stability>
+				<release>stable</release>
+				<api>stable</api>
+			</stability>
+			<date>2016-01-20</date>
+			<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+			<notes>
+</notes>
+		</release>
 		<release>
 			<version>
 				<release>1.0.3</release>
