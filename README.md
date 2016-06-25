@@ -13,7 +13,7 @@ This is OAUTH2 login tool and support follow vendors:
  * Facebook
  * Github
  * Naver
- * Daum
+ * Daum (or Kakao talk)
 
 ## Installation
 
