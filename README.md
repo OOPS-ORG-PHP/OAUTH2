@@ -45,6 +45,71 @@ install ok: channel://pear.oops.org/OAUTH2-1.0.4
 
 ### 2. install by hand
 
-Download oauth pear package at 
+Get last release at https://github.com/OOPS-ORG-PHP/OAUTH2/releases and uncompress pakcage within PHP include_path.
+
+You must need follow dependency pear packages:
+ * myException at https://github.com/OOPS-ORG-PHP/myException/releases/
+ * HTTPRelay at https://github.com/OOPS-ORG-PHP/HTTPRelay/releases/
 
 ## Usages
+
+Refence siste: http://pear.oops.org/docs/oops-OAUTH2/OAUth2.html (with Korean)
+
+```php
+<?php
+session_start ();
+
+require_once 'OAUTH2.php';
+
+set_error_handler ('myException::myErrorHandler');
+
+// Callback URL is this page.
+$callback = sprintf (
+    '%s://%s%s',
+    $_SERVER['HTTPS'] ? 'https' : 'http',
+    $_SERVER['HTTP_HOST'],
+    $_SERVER['REQUEST_URI']
+);
+
+$appId = (object) array (
+    'vendor'   => 'google',
+    'id'       => 'APPLICATION_ID',
+    'secret'   => 'APPLICATION_SECRET_KEY',
+    'callback' => $callback,
+);
+
+try {
+    $oauth2 = new oops\OAUTH2 ($appId);
+
+    // If you want to logout, give logout parameter at callback url.
+    // If you need redirect after logout, give redrect parameter.
+    // For example:
+    //  http://callback_url?logout&redirect=http%3A%2F%2Fredirect_url
+    if ( isset ($_GET['logout']) ) {
+        unset ($_SESSION['oauth2']);
+
+        if ( $_GET['redirect'] )
+            Header ('Location: ' . $redirect);
+
+        printf ('%s Complete logout', strtoupper ($appId->vendor));
+        exit;
+    }
+
+    $user = $oauth2->Profile ();
+    $uid = sprintf ('%s:%s', $appId->vendor, $user->id);
+    $_SESSION['oauth2'] = (object) array (
+        'uid' => $uid,
+        'name' => $user->name,
+        'email' => $user->email,
+        'img' => $user->img,
+        'logout' => $callback . '?logout'
+    );
+
+    print_r ($_SESS['oauth2']);
+} catch ( myException $e ) {
+    echo $e->Message () . "\n";
+    print_r ($e->TraceAsArray);
+    $e->finalize ();
+}
+?>
+```
