@@ -43,6 +43,13 @@ install ok: channel://pear.oops.org/OAUTH2-1.0.4
 [root@host ~]$
 ```
 
+If you wnat to upgarde version:
+
+```bash
+[root@host ~]$ pear upgrade oops/OAUT2
+```
+
+
 ### 2. install by hand
 
 Get last release at https://github.com/OOPS-ORG-PHP/OAUTH2/releases and uncompress pakcage within PHP include_path.
