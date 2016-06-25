@@ -1,4 +1,5 @@
 # OAUTH2 pear package
+![GitHub license](https://img.shields.io/badge/license-BSD-blue.svg)
 
 ## License
 
