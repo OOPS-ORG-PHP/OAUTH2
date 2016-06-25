@@ -12,9 +12,9 @@
 		<active>yes</active>
 	</lead>
 	<date>2016-06-25</date>
-	<time>19:04:03</time>
+	<time>19:16:50</time>
 	<version>
-		<release>1.0.4</release>
+		<release>1.0.5</release>
 		<api>1.0.0</api>
 	</version>
 	<stability>
@@ -23,7 +23,6 @@
 	</stability>
 	<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
 	<notes>
-		* update Facebook API v2.6
 	</notes>
 	<contents>
 		<dir name="/">
@@ -60,6 +59,20 @@
 	</dependencies>
 	<phprelease />
 	<changelog>
+		<release>
+			<version>
+				<release>1.0.5</release>
+				<api>1.0.0</api>
+			</version>
+			<stability>
+				<release>stable</release>
+				<api>stable</api>
+			</stability>
+			<date>2016-06-25</date>
+			<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+			<notes>
+			</notes>
+		</release>
 		<release>
 			<version>
 				<release>1.0.4</release>
