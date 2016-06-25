@@ -11,8 +11,8 @@
 		<email>joungkyun@gmail.com</email>
 		<active>yes</active>
 	</lead>
-	<date>2016-01-20</date>
-	<time>04:13:43</time>
+	<date>2016-06-25</date>
+	<time>19:04:03</time>
 	<version>
 		<release>1.0.4</release>
 		<api>1.0.0</api>
@@ -23,15 +23,16 @@
 	</stability>
 	<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
 	<notes>
-</notes>
+		* update Facebook API v2.6
+	</notes>
 	<contents>
 		<dir name="/">
-			<file role="php" md5sum="04fdeed8899010c4db6aad407878e828" name="OAUTH2.php" />
-			<file role="php" md5sum="f2654a7bb33048c514a62c2693fbcce8" name="OAUTH2/DAUM.php" />
-			<file role="php" md5sum="a54ba9eb44b8c57fe336984236452b94" name="OAUTH2/FACEBOOK.php" />
-			<file role="php" md5sum="e528dd5cfe525b9560642e8c09e80b67" name="OAUTH2/GITHUB.php" />
-			<file role="php" md5sum="419272af8b40e5ade59fc67003ded10e" name="OAUTH2/GOOGLE.php" />
-			<file role="php" md5sum="99b35a5e0e200ce13895818f7c18e97b" name="OAUTH2/NAVER.php" />
+			<file role="php" md5sum="97716e55731aaf11ec6afa32acd71970" name="OAUTH2.php" />
+			<file role="php" md5sum="143ab56d870fd797b5f013f46a31555b" name="OAUTH2/DAUM.php" />
+			<file role="php" md5sum="0012e029332b35e34f97cf66765c8be5" name="OAUTH2/FACEBOOK.php" />
+			<file role="php" md5sum="b7af33fd1ce542466860a0f9fff8cdc2" name="OAUTH2/GITHUB.php" />
+			<file role="php" md5sum="b1064ccfc0be6142ca06c484592212fa" name="OAUTH2/GOOGLE.php" />
+			<file role="php" md5sum="cd31ae806a13c9017b8cbea928c1853e" name="OAUTH2/NAVER.php" />
 			<file role="php" md5sum="224ea170ad68506ba9f0805a49be2b0d" name="OAUTH2/logout-agree.template" />
 			<file role="php" md5sum="318f0bc144dd8ad28be690f6e9ff2af3" name="OAUTH2/logout-no-auto.template" />
 			<file role="php" md5sum="3f38dd2c30e3a33dca52a253908c96a6" name="OAUTH2/logout.template" />
@@ -68,10 +69,11 @@
 				<release>stable</release>
 				<api>stable</api>
 			</stability>
-			<date>2016-01-20</date>
+			<date>2016-06-25</date>
 			<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
 			<notes>
-</notes>
+				* update Facebook API v2.6
+			</notes>
 		</release>
 		<release>
 			<version>
@@ -84,13 +86,14 @@
 			</stability>
 			<date>2016-01-20</date>
 			<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-			<notes>* 지원하지 않는 vendor 접근시에 exception 처리 안되는 문제 수정
-* NAVER logout 시에 네이버 사이트 로그아웃 되지 않는 문제 해결
-* logout page 디자인 변경 및 메시지 영문으로 변경
-* X-Frame-Options 문제로 gooogle logout 안되는 문제 해결
-* $_OAUTH2_LOGOUT_TEMPALTE_ global 변수로 사용자 logout template을 사용할 수 있도록 지원
-* GITHUB oauth2 지원
-</notes>
+			<notes>
+				* 지원하지 않는 vendor 접근시에 exception 처리 안되는 문제 수정
+				* NAVER logout 시에 네이버 사이트 로그아웃 되지 않는 문제 해결
+				* logout page 디자인 변경 및 메시지 영문으로 변경
+				* X-Frame-Options 문제로 gooogle logout 안되는 문제 해결
+				* $_OAUTH2_LOGOUT_TEMPALTE_ global 변수로 사용자 logout template을 사용할 수 있도록 지원
+				* GITHUB oauth2 지원
+			</notes>
 		</release>
 		<release>
 			<version>
@@ -103,8 +106,9 @@
 			</stability>
 			<date>2015-06-09</date>
 			<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-			<notes>* fixed unknown class oops\OAUTH2\myException on DAUM api
-</notes>
+			<notes>
+				* fixed unknown class oops\OAUTH2\myException on DAUM api
+			</notes>
 		</release>
 		<release>
 			<version>
@@ -117,8 +121,9 @@
 			</stability>
 			<date>2014-08-05</date>
 			<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-			<notes>* 다음 logout 방식 변경 사항 수정
-</notes>
+			<notes>
+				* 다음 logout 방식 변경 사항 수정
+			</notes>
 		</release>
 		<release>
 			<version>
@@ -131,8 +136,9 @@
 			</stability>
 			<date>2014-06-30</date>
 			<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-			<notes>* 1.0.0 release
-</notes>
+			<notes>
+				* 1.0.0 release
+			</notes>
 		</release>
 	</changelog>
 </package>

@@ -65,7 +65,7 @@ Class FACEBOOK {
 	 * token url
 	 * @var string
 	 */
-	private $reqToken = 'https://graph.facebook.com/oauth/access_token';
+	private $reqToken = 'https://graph.facebook.com/v2.6/oauth/access_token';
 	/**
 	 * revoke url
 	 * @var string
@@ -75,7 +75,7 @@ Class FACEBOOK {
 	 * user information url
 	 * @var string
 	 */
-	private $reqUser  = 'https://graph.facebook.com/me';
+	private $reqUser  = 'https://graph.facebook.com/v2.6/me';
 	/**
 	 * app information
 	 * @var stdClass memebr는 다음과 같음
@@ -206,9 +206,14 @@ Class FACEBOOK {
 
 		$http = new \HTTPRelay;
 		$buf = $http->fetch ($this->reqToken, 10, '', $post);
+
+		/* {{{ For graph api 2.0
 		parse_str ($buf, $output);
 		$r = (object) $output;
 		unset ($output);
+		}}} */
+		// For graph api 2.6
+		$r = json_decode ($buf);
 
 		if ( $r->error )
 			$this->error ($r->error_description);
