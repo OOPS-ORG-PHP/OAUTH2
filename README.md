@@ -9,11 +9,11 @@ This program is under BSD license
 ## Description
 
 This is OAUTH2 login tool and support follow vendors:
- * Googke
+ * Google
  * Facebook
  * Github
  * Naver
- *Daum
+ * Daum
 
 ## Installation
 
