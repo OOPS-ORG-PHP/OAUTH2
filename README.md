@@ -61,7 +61,9 @@ You must need follow dependency pear packages:
 
 ## Usages
 
-Refence siste: http://pear.oops.org/docs/oops-OAUTH2/OAUth2.html (with Korean)
+Refence siste: http://pear.oops.org/docs/oops-OAUTH2/OAUth2.html
+
+reference is written by Korean. If you can't read korean, use [google translator](https://translate.google.com/translate?sl=auto&tl=en&js=y&prev=_t&hl=ko&ie=UTF-8&u=http%3A%2F%2Fpear.oops.org%2Fdocs%2Foops-OAUTH2%2FOAUth2.html&edit-text=&act=url).
 
 ```php
 <?php
