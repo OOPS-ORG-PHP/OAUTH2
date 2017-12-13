@@ -1,6 +1,4 @@
 <?php
-// $Id$
-
 /*
  * oops\AUTH2 FACEBOOK test page
  *

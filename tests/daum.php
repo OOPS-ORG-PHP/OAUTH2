@@ -1,6 +1,4 @@
 <?php
-// $Id$
-
 /*
  * oops\AUTH2 DAUM test page
  *
