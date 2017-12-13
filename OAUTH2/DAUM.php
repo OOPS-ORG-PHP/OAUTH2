@@ -173,11 +173,11 @@ Class DAUM {
 			rawurlencode ($app->callback), $this->sess->state
 		);
 
-		$url = sprintf (
-			'%s?popup=1&url=%s',
-			'http://login.daum.net/accounts/loginform.do',
-			urlencode ($url)
-		);
+		#$url = sprintf (
+		#	'%s?popup=1&url=%s',
+		#	'http://logins.daum.net/accounts/loginform.do',
+		#	urlencode ($url)
+		#);
 
 		Header ('Location: ' . $url);
 		exit;
