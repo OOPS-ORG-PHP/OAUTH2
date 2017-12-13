@@ -1,7 +1,7 @@
 <?php
 /**
  * Project: oops\OAUTH2:: OAUTH2 pear package<br>
- * File:    DAUM.php<br>
+ * File:    OAUTH2.php<br>
  * Dependency:
  *   - {@link http://pear.oops.org/docs/li_HTTPRelay.html oops/HTTPRelay}
  *   - {@link http://pear.oops.org/docs/li_myException.html oops/myException}
@@ -14,12 +14,12 @@
  * Application ID와 Application Secret을 발급받아야 한다. 각 모듈의
  * 상단 주석을 참조하라.
  *
- * 현재 GOOGLE, FACEBOOK, DAUM, NAVER 를 지원한다.
+ * 현재 GOOGLE, FACEBOOK, DAUM, NAVER, GITHUB, KAKAO 를 지원한다.
  *
  * @category  HTTP
  * @package   oops\OAUTH2
  * @author    JoungKyun.Kim <http://oops.org>
- * @copyright (c) 2016 OOPS.org
+ * @copyright (c) 2017 OOPS.org
  * @license   BSD License
  * @version   SVN: $Id$
  * @link      http://pear.oops.org/package/OAUTH2
@@ -43,11 +43,11 @@ require_once 'myException.php';
  * OAUTH2를 이용하여 로그인을 진행하고, 로그인된 사용자의
  * 프로필 정보를 관리한다.
  *
- * 현재 GOOGLE, FACEBOOK, DAUM, NAVER 를 지원한다.
+ * 현재 GOOGLE, FACEBOOK, DAUM, NAVER, GITHUB, KAKAO 를 지원한다.
  *
  * @package oops/OAUTH2
  * @author JoungKyun.Kim <http://oops.org>
- * @copyright (c) 2016 JoungKyun.Kim
+ * @copyright (c) 2017 JoungKyun.Kim
  * @license BSD License
  * @version SVN: $Id$
  * @example pear_OAUTH2/tests/test.php OAUTH2 pear 예제 코드
