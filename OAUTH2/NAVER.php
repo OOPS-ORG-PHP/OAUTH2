@@ -281,13 +281,20 @@ Class NAVER {
 	 * 로그인 과정이 완료되면 발급받은 NAVER::$sess->oauth 에 등록된
 	 * 키를 이용하여 로그인 사용자의 정보를 가져온다.
 	 *
+	 * 2018-01-30 이후, 사용자 UID 만 기본 값이고, 나머지는 옵션으로 변경이 되어,
+	 * 값이 없을 수 있다.
+	 *
 	 * @access public
 	 * @return stdClass 다음의 object를 반환
-	 *   - id     사용자 UID
-	 *   - name   사용자 별칭
-	 *   - email  이메일
-	 *   - img    프로필 사진 URL 정보 
-	 *   - r      DAUM profile 원본 값
+	 *   - id       사용자 UID
+	 *   - nickname 사용자 별칠
+	 *   - realname 사용자 실명
+	 *   - name     사용자 이름 (또는 사용자 별칭)
+	 *   - email    이메일
+	 *   - gender   성별
+	 *   - age      나이대
+	 *   - birth    출생년을 제외한 생일
+	 *   - img      프로필 사진 URL 정보 
 	 */
 	public function Profile () {
 		$sess = &$this->sess;
@@ -306,14 +313,21 @@ Class NAVER {
 			$this->error ($r->result->message);
 
 		$xmlr = &$xml->response;
+
+		$rname = (string) $xmlr->name->{0};
+		$nname = (string) $xmlr->nickname->{0};
+		$name = $rname ? $rname : $nname;
+
 		$r = array (
-			'id' => (string) $xmlr->enc_id->{0},
-			'name' => (string) $xmlr->nickname->{0},
-			'email' => (string) $xmlr->email->{0},
-			'gender' => (string) $xmlr->gender->{0},
-			'age'   => (string) $xmlr->age->{0},
-			'birth' => (string) $xmlr->birthday,
-			'img'  => (string) $xmlr->profile_image
+			'id'       => (string) $xmlr->enc_id->{0},
+			'realname' => $rname,
+			'nickname' => $nname,
+			'name'     => $name,
+			'email'    => (string) $xmlr->email->{0},
+			'gender'   => (string) $xmlr->gender->{0},
+			'age'      => (string) $xmlr->age->{0},
+			'birth'    => (string) $xmlr->birthday,
+			'img'      => (string) $xmlr->profile_image
 		);
 
 		return (object) $r;

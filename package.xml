@@ -11,10 +11,10 @@
 		<email>joungkyun@gmail.com</email>
 		<active>yes</active>
 	</lead>
-	<date>2017-12-15</date>
-	<time>03:08:59</time>
+	<date>2018-01-21</date>
+	<time>22:27:46</time>
 	<version>
-		<release>1.0.5</release>
+		<release>1.0.6</release>
 		<api>1.0.0</api>
 	</version>
 	<stability>
@@ -22,8 +22,8 @@
 		<api>stable</api>
 	</stability>
 	<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-	<notes>* fixed #2 can't find duam login page
-* Support new OAUTH vendor KAKAO
+	<notes>* 네이버 모듈에 실명(realname), 닉네임 정보(nickname) 추가.
+* 기존의 name은 nickname 정보에서 실명이 있을 경우 realname을 사용하도록 변경
 	</notes>
 	<contents>
 		<dir name="/">
@@ -33,7 +33,7 @@
 			<file role="php" md5sum="4b8bb4b1dca0b035c3b227cf27fd2789" name="OAUTH2/GITHUB.php" />
 			<file role="php" md5sum="7d281b94946a5fc126af005b70029700" name="OAUTH2/GOOGLE.php" />
 			<file role="php" md5sum="56109b4d592ae9bc335e2f7329768185" name="OAUTH2/KAKAO.php" />
-			<file role="php" md5sum="de0c55563dd16a286d6c6b078404d7d6" name="OAUTH2/NAVER.php" />
+			<file role="php" md5sum="836982151516eb3f80fbaa305855b17b" name="OAUTH2/NAVER.php" />
 			<file role="php" md5sum="224ea170ad68506ba9f0805a49be2b0d" name="OAUTH2/logout-agree.template" />
 			<file role="php" md5sum="318f0bc144dd8ad28be690f6e9ff2af3" name="OAUTH2/logout-no-auto.template" />
 			<file role="php" md5sum="3f38dd2c30e3a33dca52a253908c96a6" name="OAUTH2/logout.template" />
@@ -63,6 +63,22 @@
 	<changelog>
 		<release>
 			<version>
+				<release>1.0.6</release>
+				<api>1.0.0</api>
+			</version>
+			<stability>
+				<release>stable</release>
+				<api>stable</api>
+			</stability>
+			<date>2018-01-21</date>
+			<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+			<notes>
+				* 네이버 모듈에 실명(realname), 닉네임 정보(nickname) 추가.
+				* 기존의 name은 nickname 정보에서 실명이 있을 경우 realname을 사용하도록 변경
+			</notes>
+		</release>
+		<release>
+			<version>
 				<release>1.0.5</release>
 				<api>1.0.0</api>
 			</version>
@@ -70,10 +86,11 @@
 				<release>stable</release>
 				<api>stable</api>
 			</stability>
-			<date>2017-12-15</date>
+			<date>2018-01-21</date>
 			<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-			<notes>* fixed #2 can't find duam login page
-* Support new OAUTH vendor KAKAO
+			<notes>
+				* fixed #2 can't find duam login page
+				* Support new OAUTH vendor KAKAO
 			</notes>
 		</release>
 		<release>

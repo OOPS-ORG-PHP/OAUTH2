@@ -14,7 +14,7 @@
 	<date>@curdate@</date>
 	<time>@curtime@</time>
 	<version>
-		<release>1.0.5</release>
+		<release>1.0.6</release>
 		<api>1.0.0</api>
 	</version>
 	<stability>
@@ -22,8 +22,8 @@
 		<api>stable</api>
 	</stability>
 	<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-	<notes>* fixed #2 can't find duam login page
-* Support new OAUTH vendor KAKAO
+	<notes>* 네이버 모듈에 실명(realname), 닉네임 정보(nickname) 추가.
+* 기존의 name은 nickname 정보에서 실명이 있을 경우 realname을 사용하도록 변경
 	</notes>
 	<contents>
 		<dir name="/">
@@ -63,6 +63,22 @@
 	<changelog>
 		<release>
 			<version>
+				<release>1.0.6</release>
+				<api>1.0.0</api>
+			</version>
+			<stability>
+				<release>stable</release>
+				<api>stable</api>
+			</stability>
+			<date>@curdate@</date>
+			<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+			<notes>
+				* 네이버 모듈에 실명(realname), 닉네임 정보(nickname) 추가.
+				* 기존의 name은 nickname 정보에서 실명이 있을 경우 realname을 사용하도록 변경
+			</notes>
+		</release>
+		<release>
+			<version>
 				<release>1.0.5</release>
 				<api>1.0.0</api>
 			</version>
@@ -72,8 +88,9 @@
 			</stability>
 			<date>@curdate@</date>
 			<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-			<notes>* fixed #2 can't find duam login page
-* Support new OAUTH vendor KAKAO
+			<notes>
+				* fixed #2 can't find duam login page
+				* Support new OAUTH vendor KAKAO
 			</notes>
 		</release>
 		<release>
