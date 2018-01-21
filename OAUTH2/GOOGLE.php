@@ -352,12 +352,13 @@ Class GOOGLE {
 				'/{%LOGOUT-URL%}/',
 				'/{%WIN-WIDTH%}/',
 				'/{%WIN-HEIGHT%}/',
+				'/{%INTERVAL%}/',
 			);
 			$dst = array (
 				'Google',
 				$redirect,
 				'https://accounts.google.com/Logout?continue=https://google.com',
-				600, 250
+				600, 250, 3000
 			);
 			$logoutDoc = preg_replace ($src, $dst, $logoutDoc);
 			echo $logoutDoc;

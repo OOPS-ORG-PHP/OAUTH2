@@ -371,12 +371,13 @@ Class KAKAO {
 				'/{%LOGOUT-URL%}/',
 				'/{%WIN-WIDTH%}/',
 				'/{%WIN-HEIGHT%}/',
+				'/{%INTERVAL%}/',
 			);
 			$dst = array (
 				'KAKAO',
 				$redirect,
 				'https://accounts.kakao.com/logout?continue=https://accounts.kakao.com/weblogin/account',
-				600, 250
+				600, 250, 1000
 			);
 			$logoutDoc = preg_replace ($src, $dst, $logoutDoc);
 			echo $logoutDoc;
