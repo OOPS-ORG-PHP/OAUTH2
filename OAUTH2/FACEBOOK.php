@@ -17,7 +17,7 @@
  * @package   oops\OAUTH2
  * @subpackage   oops\OAUTH2\FACEBOOK
  * @author    JoungKyun.Kim <http://oops.org>
- * @copyright (c) 2017 JoungKyun.Kim
+ * @copyright (c) 2018 JoungKyun.Kim
  * @license   BSD License
  * @version   SVN: $Id$
  * @example   pear_OAUTH2/tests/facebook.php FACEBOOK pear package 예제 코드
@@ -41,7 +41,7 @@ require_once 'HTTPRelay.php';
  * @package   oops\OAUTH2
  * @subpackage   oops\OAUTH2\FACEBOOK
  * @author    JoungKyun.Kim <http://oops.org>
- * @copyright (c) 2017 OOPS.org
+ * @copyright (c) 2018 OOPS.org
  * @license   BSD License
  * @version   SVN: $Id$
  * @example   pear_OAUTH2/tests/facebook.php FACEBOOK pear 예제 코드
