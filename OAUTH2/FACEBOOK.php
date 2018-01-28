@@ -65,7 +65,7 @@ Class FACEBOOK {
 	 * token url
 	 * @var string
 	 */
-	private $reqToken = 'https://graph.facebook.com/v2.6/oauth/access_token';
+	private $reqToken = 'https://graph.facebook.com/v2.11/oauth/access_token';
 	/**
 	 * revoke url
 	 * @var string
@@ -75,7 +75,7 @@ Class FACEBOOK {
 	 * user information url
 	 * @var string
 	 */
-	private $reqUser  = 'https://graph.facebook.com/v2.6/me';
+	private $reqUser  = 'https://graph.facebook.com/v2.11/me';
 	/**
 	 * app information
 	 * @var stdClass memebr는 다음과 같음

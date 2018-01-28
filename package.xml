@@ -11,10 +11,10 @@
 		<email>joungkyun@gmail.com</email>
 		<active>yes</active>
 	</lead>
-	<date>2018-01-21</date>
-	<time>22:36:47</time>
+	<date>2018-01-29</date>
+	<time>01:20:43</time>
 	<version>
-		<release>1.0.6</release>
+		<release>1.0.7</release>
 		<api>1.0.0</api>
 	</version>
 	<stability>
@@ -22,15 +22,13 @@
 		<api>stable</api>
 	</stability>
 	<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-	<notes>* 네이버 모듈에 실명(realname), 닉네임 정보(nickname) 추가.
-* 기존의 name은 nickname 정보에서 실명이 있을 경우 realname을 사용하도록 변경
-* 로그아웃 동의 템플릿에서 기다릴 시간 변경 가능 하도록 수정
+	<notes>* Facebook graph api 버전 업데이트 (v2.6 to v2.11)
 	</notes>
 	<contents>
 		<dir name="/">
 			<file role="php" md5sum="3d0e7761f13fd06fc86f5981953b69e7" name="OAUTH2.php" />
 			<file role="php" md5sum="2b97dbfb668cd1dd98bbb6dd33c95ba3" name="OAUTH2/DAUM.php" />
-			<file role="php" md5sum="759e675b6d8bed5a5b6b4d20de01a4b9" name="OAUTH2/FACEBOOK.php" />
+			<file role="php" md5sum="e9bc74e63549ddddfe333b3695cd95c0" name="OAUTH2/FACEBOOK.php" />
 			<file role="php" md5sum="f93341015cc35768d5cdb23de0df74fa" name="OAUTH2/GITHUB.php" />
 			<file role="php" md5sum="a822175b14c492fe429aecda3e9ce9a1" name="OAUTH2/GOOGLE.php" />
 			<file role="php" md5sum="bef51d54d15092692683fbd91e51b0f6" name="OAUTH2/KAKAO.php" />
@@ -62,6 +60,21 @@
 	</dependencies>
 	<phprelease />
 	<changelog>
+		<release>
+			<version>
+				<release>1.0.7</release>
+				<api>1.0.0</api>
+			</version>
+			<stability>
+				<release>stable</release>
+				<api>stable</api>
+			</stability>
+			<date>2018-01-29</date>
+			<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+			<notes>
+				* Facebook graph api 버전 업데이트 (v2.6 to v2.11)
+			</notes>
+		</release>
 		<release>
 			<version>
 				<release>1.0.6</release>
