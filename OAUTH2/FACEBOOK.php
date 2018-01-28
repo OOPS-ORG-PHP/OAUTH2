@@ -311,6 +311,9 @@ Class FACEBOOK {
 		$http = new \HTTPRelay ();
 		$buf = $http->fetch ($url);
 
+		if ( ! $buf )
+			$this->error (sprintf ('[OAUTH2] Failed get user profile for %s', __CLASS__));
+
 		#stdClass Object
 		#(
 		#	[id] => 사용자 확인값

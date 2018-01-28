@@ -302,6 +302,9 @@ Class GITHUB {
 		$http = new \HTTPRelay ($header);
 		$buf = $http->fetch ($this->reqUser);
 
+		if ( ! $buf )
+			$this->error (sprintf ('[OAUTH2] Failed get user profile for %s', __CLASS__));
+
 		$r = json_decode ($buf);
 
 		$re = array (

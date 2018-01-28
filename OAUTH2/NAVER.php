@@ -308,6 +308,9 @@ Class NAVER {
 		$http = new \HTTPRelay ($header);
 		$buf = $http->fetch ($this->reqUser);
 
+		if ( ! $buf )
+			$this->error (sprintf ('[OAUTH2] Failed get user profile for %s', __CLASS__));
+
 		$xml = simplexml_load_string ($buf);
 		if ( $xml->result->resultcode != '00' )
 			$this->error ($r->result->message);
