@@ -24,10 +24,9 @@
  * @package   oops\OAUTH2
  * @subpackage oops\OAUTH2\NAVER
  * @author    JoungKyun.Kim <http://oops.org>
- * @copyright (c) 2018 OOPS.org
+ * @copyright (c) 2018, OOPS.org
  * @license   BSD License
- * @version   SVN: $Id$
- * @example   pear_OAUTH2/tests/naver.php NAVER pear package 예제 코드
+ * @example   OAUTH2/tests/naver.php NAVER pear package 예제 코드
  * @filesource
  */
 
@@ -48,10 +47,9 @@ require_once 'HTTPRelay.php';
  * @package oops\OAUTH2
  * @subpackage oops\OAUTH2\NAVER
  * @author    JoungKyun.Kim <http://oops.org>
- * @copyright (c) 2018 OOPS.org
+ * @copyright (c) 2018, OOPS.org
  * @license   BSD License
- * @version   SVN: $Id$
- * @example   pear_OAUTH2/tests/naver.php NAVER pear 예제 코드
+ * @example   OAUTH2/tests/naver.php NAVER pear 예제 코드
  */
 Class NAVER {
 	// {{{ properities

@@ -17,10 +17,9 @@
  * @package   oops\OAUTH2
  * @subpackage   oops\OAUTH2\GITHUB
  * @author    JoungKyun.Kim <http://oops.org>
- * @copyright (c) 2018 OOPS.org
+ * @copyright (c) 2018, OOPS.org
  * @license   BSD License
- * @version   SVN: $Id$
- * @example   pear_OAUTH2/tests/github.php GITHUB pear package 예제 코드
+ * @example   OAUTH2/tests/github.php GITHUB pear package 예제 코드
  * @filesource
  */
 
@@ -41,10 +40,9 @@ require_once 'HTTPRelay.php';
  * @package   oops\OAUTH2
  * @subpackage   oops\OAUTH2\GITHUB
  * @author    JoungKyun.Kim <http://oops.org>
- * @copyright (c) 2018 OOPS.org
+ * @copyright (c) 2018, OOPS.org
  * @license   BSD License
- * @version   SVN: $Id$
- * @example   pear_OAUTH2/tests/github.php GITHUB pear 예제 코드
+ * @example   OAUTH2/tests/github.php GITHUB pear 예제 코드
  */
 Class GITHUB {
 	// {{{ properities
@@ -86,7 +84,6 @@ Class GITHUB {
 	private $apps;
 	/**
 	 * SSL type
-	 * @access private
 	 * @var string
 	 */
 	private $proto = 'http';

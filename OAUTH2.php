@@ -19,11 +19,10 @@
  * @category  HTTP
  * @package   oops\OAUTH2
  * @author    JoungKyun.Kim <http://oops.org>
- * @copyright (c) 2018 OOPS.org
+ * @copyright (c) 2018, OOPS.org
  * @license   BSD License
- * @version   SVN: $Id$
  * @link      http://pear.oops.org/package/OAUTH2
- * @example   pear_DAUM/tests/test.php OAUTH2 pear package 예제 코드
+ * @example   OAUTH2/tests/test.php OAUTH2 pear package 예제 코드
  * @filesource
  */
 
@@ -47,10 +46,9 @@ require_once 'myException.php';
  *
  * @package oops/OAUTH2
  * @author JoungKyun.Kim <http://oops.org>
- * @copyright (c) 2018 JoungKyun.Kim
+ * @copyright (c) 2018, OOPS.org
  * @license BSD License
- * @version SVN: $Id$
- * @example pear_OAUTH2/tests/test.php OAUTH2 pear 예제 코드
+ * @example OAUTH2/tests/test.php OAUTH2 pear 예제 코드
  */
 Class OAUth2 {
 	// {{{ properities
