@@ -315,18 +315,18 @@ Class NAVER {
 
 		$xmlr = &$xml->response;
 
-		$rname = (string) $xmlr->name->{0};
-		$nname = (string) $xmlr->nickname->{0};
+		$rname = (string) $xmlr->name{0};
+		$nname = (string) $xmlr->nickname{0};
 		$name = $rname ? $rname : $nname;
 
 		$r = array (
-			'id'       => (string) $xmlr->enc_id->{0},
+			'id'       => (string) $xmlr->enc_id{0},
 			'realname' => $rname,
 			'nickname' => $nname,
 			'name'     => $name,
-			'email'    => (string) $xmlr->email->{0},
-			'gender'   => (string) $xmlr->gender->{0},
-			'age'      => (string) $xmlr->age->{0},
+			'email'    => (string) $xmlr->email{0},
+			'gender'   => (string) $xmlr->gender{0},
+			'age'      => (string) $xmlr->age{0},
 			'birth'    => (string) $xmlr->birthday,
 			'img'      => (string) $xmlr->profile_image
 		);
