@@ -10,10 +10,10 @@
 		<email>joungkyun@gmail.com</email>
 		<active>yes</active>
 	</lead>
-	<date>2018-05-05</date>
-	<time>03:59:43</time>
+	<date>2018-05-26</date>
+	<time>05:56:23</time>
 	<version>
-		<release>1.0.7</release>
+		<release>1.0.8</release>
 		<api>1.0.0</api>
 	</version>
 	<stability>
@@ -21,9 +21,7 @@
 		<api>stable</api>
 	</stability>
 	<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-	<notes>* Facebook graph api 버전 업데이트 (v2.6 to v2.11)
-* Profile 못 가져올 경우에 대한 방어 코드 추가
-* PHP7 이후, NAVER login 안되는 문제 수정
+	<notes>
 	</notes>
 	<contents>
 		<dir name="/">
@@ -61,6 +59,20 @@
 	</dependencies>
 	<phprelease />
 	<changelog>
+		<release>
+			<version>
+				<release>1.0.8</release>
+				<api>1.0.0</api>
+			</version>
+			<stability>
+				<release>stable</release>
+				<api>stable</api>
+			</stability>
+			<date>2018-05-26</date>
+			<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+			<notes>
+			</notes>
+		</release>
 		<release>
 			<version>
 				<release>1.0.7</release>
