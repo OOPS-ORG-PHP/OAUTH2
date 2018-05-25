@@ -11,7 +11,7 @@
 		<active>yes</active>
 	</lead>
 	<date>2018-05-26</date>
-	<time>05:56:23</time>
+	<time>06:31:29</time>
 	<version>
 		<release>1.0.8</release>
 		<api>1.0.0</api>
@@ -21,7 +21,7 @@
 		<api>stable</api>
 	</stability>
 	<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-	<notes>
+	<notes>* fixed #5 Support KAKAO API v2
 	</notes>
 	<contents>
 		<dir name="/">
@@ -30,7 +30,7 @@
 			<file role="php" md5sum="0042e2f230145691b42ed314f7907534" name="OAUTH2/FACEBOOK.php" />
 			<file role="php" md5sum="d32c59d9fbae70fdb2c8195979360cf1" name="OAUTH2/GITHUB.php" />
 			<file role="php" md5sum="045c517caff5841e7e6446314976fed4" name="OAUTH2/GOOGLE.php" />
-			<file role="php" md5sum="b997dc0d7c81319788b3898d9ec7571f" name="OAUTH2/KAKAO.php" />
+			<file role="php" md5sum="3797738c2b378b1e2a2c703ca4377d92" name="OAUTH2/KAKAO.php" />
 			<file role="php" md5sum="a8f080dc0e054686f7d68691ca26af96" name="OAUTH2/NAVER.php" />
 			<file role="php" md5sum="f4944e1961b5d6ea925b0b38f3e1430f" name="OAUTH2/logout-agree.template" />
 			<file role="php" md5sum="318f0bc144dd8ad28be690f6e9ff2af3" name="OAUTH2/logout-no-auto.template" />
@@ -71,6 +71,7 @@
 			<date>2018-05-26</date>
 			<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
 			<notes>
+				* fixed #5 Support KAKAO API v2
 			</notes>
 		</release>
 		<release>

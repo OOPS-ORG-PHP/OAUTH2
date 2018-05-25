@@ -70,12 +70,12 @@ Class KAKAO {
 	 * revoke url
 	 * @var string
 	 */
-	private $reqRevoke = 'https://kapi.kakao.com//v1/user/logout';
+	private $reqRevoke = 'https://kapi.kakao.com/v2/user/logout';
 	/**
 	 * user information url
 	 * @var string
 	 */
-	private $reqUser  = 'https://kapi.kakao.com/v1/user/me';
+	private $reqUser  = 'https://kapi.kakao.com/v2/user/me';
 	/**
 	 * app information
 	 * @var stdClass memebr는 다음과 같음
@@ -283,9 +283,10 @@ Class KAKAO {
 	 * @return stdClass 다음의 object를 반환
 	 *   - id     사용자 UID
 	 *   - name   사용자 별칭
-	 *   - email  빈값 (다음의 email 제공하지 않음)
+	 *   - email  KAKAO 인증 이메일 (없을 수 있다)
+	 *            verified email 을 원하면, r->kakao_account->is_email_verified 를 이용
 	 *   - img    프로필 사진 URL 정보 
-	 *   - r      KAKAO profile 원본 값
+	 *   - r      KAKAO profile, kakao_account 원본 값
 	 */
 	public function Profile () {
 		$sess = &$this->sess;
@@ -305,6 +306,7 @@ Class KAKAO {
 		if ( ! $buf )
 			$this->error (sprintf ('[OAUTH2] Failed get user profile for %s', __CLASS__));
 
+		# V1
 		#stdClass Object
 		#(
 		#   [kaccount_email]
@@ -317,14 +319,40 @@ Class KAKAO {
 		#       [thumbnail_image]
 		#   )
 		#)
+		#
+		# V2
+		#stdClass Object
+		#(
+		#    [id]
+		#    [has_signed_up]
+		#    [properties] => stdClass Object
+		#        (
+		#            [nickname]
+		#            [profile_image]
+		#            [thumbnail_image]
+		#        )
+		#    [kakao_account] => stdClass Object
+		#        (
+		#            [has_email]
+		#            [is_email_valid]
+		#            [is_email_verified]
+		#            [email]
+		#            [has_age_range]
+		#            [has_birthday]
+		#            [has_gender]
+		#        )
+		#)
 		$r = json_decode ($buf);
 
 		$re = array (
 			'id'    => $r->id,
 			'name'  => $r->properties->nickname,
-			'email' => $r->kaccount_email,
+			'email' => ($r->kakao_account->has_email && $r->kakao_account->is_email_valid == 1 ) ? $r->kakao_account->email : '',
 			'img'   => preg_replace ('/^http:/', 'https:', $r->properties->profile_image),
-			'r'     => $r->properties
+			'r'     => (object) array (
+				'properties' => $r->properties,
+				'kakao_account' => $r->kakao_account
+			)
 		);
 
 		return (object) $re;
