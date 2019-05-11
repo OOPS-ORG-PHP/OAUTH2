@@ -14,7 +14,7 @@
  * Application ID와 Application Secret을 발급받아야 한다. 각 모듈의
  * 상단 주석을 참조하라.
  *
- * 현재 GOOGLE, FACEBOOK, DAUM, NAVER, GITHUB, KAKAO 를 지원한다.
+ * 현재 GOOGLE, FACEBOOK, NAVER, GITHUB, KAKAO 를 지원한다.
  *
  * @category  HTTP
  * @package   oops\OAUTH2
@@ -42,7 +42,7 @@ require_once 'myException.php';
  * OAUTH2를 이용하여 로그인을 진행하고, 로그인된 사용자의
  * 프로필 정보를 관리한다.
  *
- * 현재 GOOGLE, FACEBOOK, DAUM, NAVER, GITHUB, KAKAO 를 지원한다.
+ * 현재 GOOGLE, FACEBOOK, NAVER, GITHUB, KAKAO 를 지원한다.
  *
  * @package oops/OAUTH2
  * @author JoungKyun.Kim <http://oops.org>
@@ -74,7 +74,7 @@ Class OAUth2 {
 	 *
 	 * @access public
 	 * @param stdClass $app  로그인 정보
-	 *   - vendor    OAUTH2 Service Provider (현재 google/facebook/daum/naver 지원)
+	 *   - vendor    OAUTH2 Service Provider (현재 google/facebook/naver/kakao 지원)
 	 *   - id        Service Provider 에서 발급받은 client ID
 	 *   - secret    Service Provider 에서 발급받은 client secret key
 	 *   - callback  이 class가 호출되는 URL (또는 provider에 등록한 callback url)

@@ -14,7 +14,6 @@ This is OAUTH2 login tool and support follow vendors:
  * Facebook
  * Github
  * Naver
- * Daum
  * Kakao
 
 ## Installation
