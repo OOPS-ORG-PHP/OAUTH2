@@ -78,6 +78,7 @@ Class OAUth2 {
 	 *   - id        Service Provider 에서 발급받은 client ID
 	 *   - secret    Service Provider 에서 발급받은 client secret key
 	 *   - callback  이 class가 호출되는 URL (또는 provider에 등록한 callback url)
+	 *   - popup     Facebook 처럼 popup login 창을 지원하는 경우 ture 로 지정
 	 * @return void
 	 */
 	function __construct ($app) {

@@ -107,6 +107,7 @@ Class FACEBOOK {
 	 *   - id       발급받은 Facebook login Application ID
 	 *   - secret   발급받은 Facebook login Application Scret key
 	 *   - callback 이 클래스가 호출되는 url
+	 *   - popup    true 일 경우, requset URL에 popup login 옵션을 추가
 	 * @return void
 	 */
 	function __construct ($v) {
@@ -159,10 +160,12 @@ Class FACEBOOK {
 		if ( $_GET['code'] || isset ($this->sess->oauth)  )
 			return;
 
+		$opt = $this->apps->popup ? '&display=popup' : '';
+
 		$url = sprintf (
-			'%s?scope=email&client_id=%s&response_type=code&redirect_uri=%s&state=%s&display=popup',
+			'%s?scope=email&client_id=%s&response_type=code&redirect_uri=%s&state=%s%',
 			$this->reqAuth, $app->id,
-			rawurlencode ($app->callback), $this->sess->state
+			rawurlencode ($app->callback), $this->sess->state, $opt
 		);
 
 		Header ('Location: ' . $url);
