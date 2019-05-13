@@ -10,8 +10,8 @@
 		<email>joungkyun@gmail.com</email>
 		<active>yes</active>
 	</lead>
-	<date>2019-05-12</date>
-	<time>00:15:34</time>
+	<date>2019-05-14</date>
+	<time>01:14:19</time>
 	<version>
 		<release>1.0.9</release>
 		<api>1.0.0</api>
@@ -23,15 +23,17 @@
 	<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
 	<notes>* fixed facebook login window is always in popup mode
 		   * remove closed DAUM provider
+		   * add microsoft provider
 	</notes>
 	<contents>
 		<dir name="/">
-			<file role="php" md5sum="06717b9f25a14559b333e6d8debd9220" name="OAUTH2.php" />
-			<file role="php" md5sum="e30204abacf75ba8bbbda8d6d398f9b6" name="OAUTH2/FACEBOOK.php" />
-			<file role="php" md5sum="d32c59d9fbae70fdb2c8195979360cf1" name="OAUTH2/GITHUB.php" />
-			<file role="php" md5sum="045c517caff5841e7e6446314976fed4" name="OAUTH2/GOOGLE.php" />
-			<file role="php" md5sum="3797738c2b378b1e2a2c703ca4377d92" name="OAUTH2/KAKAO.php" />
-			<file role="php" md5sum="a8f080dc0e054686f7d68691ca26af96" name="OAUTH2/NAVER.php" />
+			<file role="php" md5sum="f2e3496bb7a08a46cf9c46f158a06a66" name="OAUTH2.php" />
+			<file role="php" md5sum="fb4c01824286860902c101331b631311" name="OAUTH2/FACEBOOK.php" />
+			<file role="php" md5sum="4c01640417fc3fb74e480352344fe436" name="OAUTH2/GITHUB.php" />
+			<file role="php" md5sum="d994bab096cabca98b75495853dac75c" name="OAUTH2/GOOGLE.php" />
+			<file role="php" md5sum="8a4aed2f66e36d47a8bf4b39d2c30329" name="OAUTH2/KAKAO.php" />
+			<file role="php" md5sum="33403bea272684e9c8db9c6c6cd277e5" name="OAUTH2/MICROSOFT.php" />
+			<file role="php" md5sum="801cd9fd3422d81b10fa0efd7d4500ce" name="OAUTH2/NAVER.php" />
 			<file role="php" md5sum="f4944e1961b5d6ea925b0b38f3e1430f" name="OAUTH2/logout-agree.template" />
 			<file role="php" md5sum="318f0bc144dd8ad28be690f6e9ff2af3" name="OAUTH2/logout-no-auto.template" />
 			<file role="php" md5sum="3f38dd2c30e3a33dca52a253908c96a6" name="OAUTH2/logout.template" />
@@ -68,10 +70,11 @@
 				<release>stable</release>
 				<api>stable</api>
 			</stability>
-			<date>2019-05-12</date>
+			<date>2019-05-14</date>
 			<license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
 			<notes>* fixed facebook login window is always in popup mode
 				   * remove closed DAUM provider
+				   * add microsoft provider
 			</notes>
 		</release>
 		<release>
