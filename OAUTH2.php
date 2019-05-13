@@ -19,7 +19,7 @@
  * @category  HTTP
  * @package   oops\OAUTH2
  * @author    JoungKyun.Kim <http://oops.org>
- * @copyright (c) 2018, OOPS.org
+ * @copyright (c) 2019, OOPS.org
  * @license   BSD License
  * @link      http://pear.oops.org/package/OAUTH2
  * @example   OAUTH2/tests/test.php OAUTH2 pear package 예제 코드
@@ -46,7 +46,7 @@ require_once 'myException.php';
  *
  * @package oops/OAUTH2
  * @author JoungKyun.Kim <http://oops.org>
- * @copyright (c) 2018, OOPS.org
+ * @copyright (c) 2019, OOPS.org
  * @license BSD License
  * @example OAUTH2/tests/test.php OAUTH2 pear 예제 코드
  */

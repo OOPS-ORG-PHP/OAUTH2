@@ -17,7 +17,7 @@
  * @package   oops\OAUTH2
  * @subpackage oops\OAUTH2\DAUM
  * @author    JoungKyun.Kim <http://oops.org>
- * @copyright (c) 2018, OOPS.org
+ * @copyright (c) 2019, OOPS.org
  * @license   BSD License
  * @example   OAUTH2/tests/daum.php DAUM pear package 예제 코드
  * @filesource
@@ -43,7 +43,7 @@ require_once 'HTTPRelay.php';
  * @package oops\OAUTH2
  * @subpackage oops\OAUTH2\DAUM
  * @author    JoungKyun.Kim <http://oops.org>
- * @copyright (c) 2018, OOPS.org
+ * @copyright (c) 2019, OOPS.org
  * @license   BSD License
  * @example   OAUTH2/tests/daum.php DAUM pear 예제 코드
  */
