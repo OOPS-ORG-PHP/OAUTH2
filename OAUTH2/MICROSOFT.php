@@ -16,7 +16,7 @@
  * @package   oops\OAUTH2
  * @subpackage   oops\OAUTH2\MICROSOFT
  * @author    JoungKyun.Kim <http://oops.org>
- * @copyright (c) 2019, OOPS.org
+ * @copyright (c) 2020, OOPS.org
  * @license   BSD License
  * @example   OAUTH2/tests/microsoft.php MICROSOFT pear package 예제 코드
  * @since     1.0.9
@@ -40,7 +40,7 @@ require_once 'HTTPRelay.php';
  * @package   oops\OAUTH2
  * @subpackage   oops\OAUTH2\MICROSOFT
  * @author    JoungKyun.Kim <http://oops.org>
- * @copyright (c) 2019, OOPS.org
+ * @copyright (c) 2020, OOPS.org
  * @license   BSD License
  * @since     1.0.9
  * @example   OAUTH2/tests/microsoft.php MICROSOFT pear 예제 코드
